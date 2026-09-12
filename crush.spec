@@ -1,3 +1,4 @@
+%undefine _debugsource_packages
 Name:		crush
 Version:	0.93.1
 Release:	1
@@ -7,7 +8,7 @@ Group:		Development/Other
 URL:		https://github.com/charmbracelet/crush
 Source0:	https://github.com/charmbracelet/crush/archive/refs/tags/v%{version}/crush-%{version}.tar.gz
 #	go mod vendor
-#	tar cJf ../godeps-for-crush-%{version}.tar.xz vendor
+#	tar cJf ../godeps-for-crush-VERSION.tar.xz vendor
 Source1:	godeps-for-crush-%{version}.tar.xz
 BuildRequires:	golang
 BuildRequires:	compiler(go-compiler)
